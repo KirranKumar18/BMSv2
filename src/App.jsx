@@ -44,6 +44,7 @@ import Signup from './Signup';
 import Squad_info from './Squad-info';
 import Mission from './Mission';
 import MapScreen from './MapScreen';
+import Communication from './Communication';
 
 import './App.css';
 
@@ -55,6 +56,7 @@ function Navbar() {
             <button className="NavButton" onClick={() => navigate('/Mission')}>Mission</button>
             <button className="NavButton"  onClick={() => navigate('/Squad-info')}>Squad-Info</button>
             <button className="NavButton"  onClick={() => navigate('/MapScreen')}>Map</button>
+            <button className="NavButton"  onClick={() => navigate('/Communication')}>Comms</button>
         </div>
     );
 }
@@ -69,6 +71,7 @@ function App() {
                 <Route path="/Mission" element={<Mission />} />
                 <Route path="/Squad-info" element={<Squad_info />} />
                 <Route path="MapScreen" element={<MapScreen />} />
+                <Route path ="Communication" element={<Communication/>}/>
             </Routes>
             <Navbar />
         </Router>
